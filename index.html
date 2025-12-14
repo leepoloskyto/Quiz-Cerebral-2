@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Cerebral 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  <!-- MENU INICIAL -->  <div id="menu" class="screen active">
+    <h1>Quiz Cerebral 2</h1>
+    <button class="btn-white" onclick="startGame()">JOGAR</button>
+    <p>Criador: Lee Polosky</p>
+  </div>  <!-- TELA DO JOGO -->  <div id="game" class="screen">
+    <div id="questionNumber"></div>
+    <h2 id="questionText"></h2>
+    <div id="answers"></div>
+  </div>  <!-- GAME OVER -->  <div id="gameOver" class="screen">
+    <h2>Você tá ruim hein, melhore #VaEstudar</h2>
+    <button class="btn-red" onclick="resetGame()">REINICIAR</button>
+  </div>  <!-- TELA FINAL -->  <div id="final" class="screen">
+    <h2 class="yellow">Parabéns, você venceu o Quiz Cerebral 2, obrigado por jogar</h2>
+    <button class="btn-white" onclick="resetGame()">Voltar ao menu</button>
+  </div>  <script src="script.js"></script></body>
+</html>
